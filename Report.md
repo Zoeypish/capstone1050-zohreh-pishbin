@@ -56,14 +56,30 @@ My responsiblities includes:
 -Setting up backend for user login
 -Setting up databe in MYSQL and connecting Database to backend
 
-In self-assessment project there are two categories of users:
--Students:
+/////Link to Codes where I pushed chages a few weeks ago/////
+https://gitlab.com/manny5871/fs1050_capstone2022
 
--Teachers:
+In self-assessment project there are two categories of users:
+
+The users of this application would be divided in two categories: Teachers and Students. 
+
+Teachers: 
+
+•	Those with the role of Teachers will have the ability to create test, with a limitless number of questions, and at least 3 types of different questions to choose from: Fill the Blank, Multiple choice and True or False. 
+
+•	Teachers would also be able to edit the contents of a test, that is the description of the questions, and the answers to this question. 
+
+
+•	Teachers can also review the score of a test by selecting students who took said test or selecting the test in the score section of the main page of the Teacher profile. 
+
+Students: 
+•	An user with the role of student can only have an account in order to search tests, take them (once or multiple times), and store or review past scores for said test. 
+
 
 For setting up backend and connecting it to the Database I took several steps:
 
-    -Creating databse folder, addign updated database tables and then added db.js file, connecting backend to MySQL databse
+-Creating databse folder, adding updated database tables and then added db.js file, connecting backend to MySQL databse
+
 
 ```
 export let connection = mysql.createConnection({
@@ -80,7 +96,7 @@ export function connectDB() {
 }
 ```
 
-    -Importing connectdb function into index.js to start the db connection
+-Importing connectdb function into index.js to start the db connection
 
 ```
 import express from "express"; 
