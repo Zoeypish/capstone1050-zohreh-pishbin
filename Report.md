@@ -93,7 +93,6 @@ import {connectDB} from './src/database/db.js'
  // middleware to handle all other errors
 // import jwt from "jsonwebtoken";
 
-
 const app = express(); 
 
 app.use(cors());
@@ -113,8 +112,11 @@ app.use(authRouter);
 app.use(errorHandler);
 
 app.listen(port, () => console.log(`API server ready on http://localhost:${process.env.PORT}`));
-    ```
-    -Creating a route for user login based on user table
+```
+
+
+-Creating a route for user login based on user table
+
 ```
     import { connection } from "../database/db.js";
 
